@@ -7,13 +7,14 @@ priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
 
-console.log(`The percentage change is ${percentageChange}`);
+console.log(`The percentage change is ${percentageChange}`); 
 
 // Read the code and then answer the questions below
 
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
 // Number(carPrice.replaceAll(",", "")) — This line calls two functions: .replaceAll() and Number().
 // Number(priceAfterOneYear.replaceAll(",", "")) — This line also calls two functions: .replaceAll() and Number().
+// console.log() - This is a function.
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 // The issue is with the replaceAll() method call syntax. There's a syntax error because there is a missing comma between the arguments of the replaceAll() method. 
